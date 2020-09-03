@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediasActivity">
+
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/medias_toolbar"
+        >
+
+
+    </include>
+
+
+    <RelativeLayout
+        android:id="@+id/medias_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:layout_below="@+id/medias_toolbar"
+        android:layout_above="@+id/list_of_images_classes"
+
+        >
+
+        <ImageButton
+            android:id="@+id/searsh_with_image_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_files"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@android:color/white"
+            android:padding="8dp"
+
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/chercher_image_with_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/medias_toolbar"
+        android:hint="searsh class ..."
+        android:inputType="textEmailAddress"
+        android:background="@drawable/inputs"
+        android:padding="10dp"
+        android:layout_marginRight="50dp"
+
+        android:drawableStart="@drawable/searsh5"
+
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/button_chercher_image_with_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chercher_image_with_class"
+
+
+        android:text="searsh"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+
+
+        />
+
+
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_of_images_classes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_chercher_image_with_class"
+
+        android:layout_marginBottom="6dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

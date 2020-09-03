@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearshImageActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/searsh_class_toolbar"
+        >
+    </include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_of_images_searshing_by_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searsh_class_toolbar"
+        android:layout_marginBottom="6dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_image_calsses"
+    android:clickable="true"
+    android:layout_width="120dp"
+    android:layout_height="150dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="4dp">
+
+
+    <LinearLayout
+
+        android:id="@+id/cardview_images_classes_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/folder_label_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/foldericon"/>
+
+        <TextView
+            android:id="@+id/folder_label_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Image label"
+            android:gravity="center"
+            android:textSize="12sp"
+
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextRecognitionActivity">
+
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/text_recogntion_toolbar"
+        ></include>
+
+    <ImageView
+        android:id="@+id/text_recognition_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/text_recogntion_toolbar"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/text_recogntion_text_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_recognition_image_view"
+        android:text=""
+        android:textSize="26dp"
+        android:maxLines="5"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/text_recogntion_select_image_frome_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_recogntion_text_display"
+
+        android:layout_marginTop="30dp"
+        android:text="Select Image from Gallery"
+        android:textColor="@android:color/background_light"
+
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        />
+
+
+    <Button
+        android:id="@+id/text_recogntion_select_image_frome_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_recogntion_select_image_frome_gallery"
+
+        android:text="Camera"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="10dp"
+
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        />
+
+    <Button
+        android:id="@+id/text_recogntion_detect_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_recogntion_select_image_frome_camera"
+
+        android:text="Detect Text"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="10dp"
+
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>
